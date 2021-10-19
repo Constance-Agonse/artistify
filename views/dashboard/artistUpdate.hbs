@@ -1,7 +1,7 @@
-<form method="post" action="/update/{{artist._id}}" class="form">
+<form method="post" action="/dashboard/artist/update/{{artist._id}}" class="form">
     <h2>Update artist</h2>
     <label class="label">Name</label>
-    <input class="input" type="text" name="name" value="{{artist.name}}" />
+    <input class="input" type="text" name="name" value="{{this.name}}" />
     <label class="label">Description</label>
     <input class="input" type="text" name="description" value="{{artist.description}}" />
     <label class="label">Band</label>
