@@ -6,7 +6,7 @@ const artistSchema = new Schema({
         unique: true
     },
     isBand: Boolean,
-    desciption: String,
+    description: String,
 
     picture: {
         type: String,

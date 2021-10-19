@@ -45,6 +45,7 @@ router.post('/', async function (req, res, next) {
   })
 
   router.post("/update/:id([a-z0-9]{24})", async function (req, res, next) {
+
     if (req.body.isBand === 'on') {req.body.isBand = true}
     else {req.body.isBand = false};
     try {
