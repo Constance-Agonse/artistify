@@ -1,0 +1,12 @@
+<form method="post" action="/update/{{artist._id}}" class="form">
+    <h2>Update artist</h2>
+    <label class="label">Name</label>
+    <input class="input" type="text" name="name" value="{{artist.name}}" />
+    <label class="label">Description</label>
+    <input class="input" type="text" name="description" value="{{artist.description}}" />
+    <label class="label">Band</label>
+    <input class="input" type="checkbox" name="isBand" value="{{artist.isBand}}" />
+    <label class="label">Picture</label>
+    <input class="input" type="text" value="{{artist.picture}}" name="picture" />
+    <button class="button">Update</button>
+</form>

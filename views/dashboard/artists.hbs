@@ -1,0 +1,32 @@
+<h2>All artists</h2>
+{{!-- <i class="fas fa-plus-square"></i>
+<a href="/">Create artist</a> --}}
+
+<table>
+    <thead>
+        <tr>
+            <th>picture</th>
+            <th>name</th>
+            <th>description</th>
+            <th>band</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each artist}}
+        <tr>
+            <td><img src="{{picture}}" alt="picture"></td>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{isBand}}</td>
+            <td><a href="/dashboard/artist/update/{{_id}}">
+                    <i class="fas fa-pen"></i>
+                    </a></td>
+            <td><a href="/dashboard/artist/delete/{{_id}}">
+                    <i class="fas fa-trash-alt"></i>
+                    </a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
